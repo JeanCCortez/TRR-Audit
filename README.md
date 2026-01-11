@@ -3,7 +3,7 @@
 
 ---
 
-## 🇧🇷 [PT-BR] Descrição da Obra
+## Descrição da Obra
 
 Este repositório contém a infraestrutura computacional e os algoritmos de auditoria estatística utilizados para validar a **Teoria da Relatividade Referencial (TRR)**. A TRR propõe uma unificação fundamental entre a dinâmica de sistemas quânticos abertos, a relatividade geral e a cosmologia profunda, substituindo entidades hipotéticas (como matéria e energia escuras) por um campo temporal ativo de spin-2 e um gradiente de anisotropia universal.
 
@@ -28,7 +28,7 @@ Para replicar o pico de **51.73σ** em Quasares, o algoritmo exige o ajuste de p
 
 ---
 
-## 🇺🇸 [EN-US] Work Description
+## Work Description
 
 This repository hosts the computational infrastructure and statistical audit algorithms used to validate the **Referential Relativity Theory (RRT)**. RRT proposes a fundamental unification between open quantum system dynamics, general relativity, and deep cosmology, replacing hypothetical entities (such as dark matter and dark energy) with an active spin-2 temporal field and a universal anisotropy gradient.
 
