@@ -5,15 +5,18 @@
 
 ## Descrição da Obra
 
-Este repositório contém a infraestrutura computacional e os algoritmos de auditoria estatística utilizados para validar a **Teoria da Relatividade Referencial (TRR)**. A TRR propõe uma unificação fundamental entre a dinâmica de sistemas quânticos abertos, a relatividade geral e a cosmologia profunda, substituindo entidades hipotéticas (como matéria e energia escuras) por um campo temporal ativo de spin-2 e um gradiente de anisotropia universal.
+Este repositório contém a infraestrutura computacional e os algoritmos de auditoria estatística utilizados para validar a **Teoria da Relatividade Referencial (TRR)**. A TRR propõe uma reformulação hidrodinâmica do espaço-tempo baseada em **Transições de Fase Termodinâmicas**. A teoria substitui entidades hipotéticas (Matéria e Energia Escuras) por um campo temporal viscoso ($\mathcal{T}_{\mu\nu}$) cuja interação com a matéria é governada pela densidade local de energia ($\rho$).
 
-A tese está dividida em **cinco volumes**, culminando no **Volume V: O Tratado da Síntese Universal**, onde as evidências observacionais (SDSS, CERN, SPARC) são unificadas com a prova formal e definitiva dos **6 Problemas do Milênio** do Instituto Clay. Os scripts aqui presentes permitem a replicação exata da convergência entre a física de campos e a harmonia aritmética.
+A tese está estruturada em **quatro volumes**, estabelecendo que o universo opera em regimes distintos de viscosidade causal:
+1.  **Fase 1 (Saturada):** Regime de alta densidade (Sistema Solar, CERN) onde a TRR é blindada, recuperando a Relatividade Geral e o Modelo Padrão.
+2.  **Fase 2 (Transição):** Regime de densidade crítica (Halos Galácticos) onde a viscosidade gera curvas de rotação planas (SPARC).
+3.  **Fase 3 (Viscosa):** Regime de vácuo profundo (Vazios Cósmicos) onde o fluxo temporal impulsiona a expansão acelerada.
 
 ### 📂 Organização dos Módulos
 
-1. **Millennium Prize Solutions (`/millennium_solutions`):** Scripts focados na prova matemática dos 6 desafios: Yang-Mills, Hipótese de Riemann, P vs NP, Navier-Stokes, Conjectura de Hodge e BSD, utilizando a **Termodinâmica da Informação (Landauer)** e a viscosidade do vácuo da TRR.
-2. **Core Cosmological Audits (`/cosmology_core`):** Algoritmos de processamento de grandes catálogos (SDSS, Pantheon+, SPARC) para extração de significância estatística (Sigma) e validação da Métrica de Cortez.
-3. **Experimental & Robustness (`/experimental_validation`):** Testes de blindagem barônica (PNB) em satélites (LAGEOS-2), interferência de hardware quântico (Micius) e estabilidade direcional via Jackknife.
+1.  **Cosmology Core (`/cosmology_core`):** Algoritmos de processamento de grandes catálogos (SDSS DR16Q, Pantheon+, Planck) para extração de significância estatística e validação da Rotação de Cortez ($\omega_p$).
+2.  **Phase Transition Dynamics (`/phase_transition`):** Simulações da função de blindagem $K(\rho)$ e modelagem das curvas de rotação galáctica sem matéria escura.
+3.  **Null Tests & Shielding (`/null_tests`):** Testes de robustez em ambientes de alta densidade (LAGEOS-2, CMS/CERN) para confirmar a **isotropia local** e a validade da Fase 1 (Saturação).
 
 ### 🛠️ Requisitos Técnicos
 Para rodar os scripts, utilize o ambiente **Python 3.11+**. As bibliotecas necessárias são:
@@ -24,21 +27,24 @@ Para rodar os scripts, utilize o ambiente **Python 3.11+**. As bibliotecas neces
 * `healpy` (Análise de multipolos CMB)
 
 ### ⚠️ Notas de Execução
-Para replicar o pico de **51.73σ** em Quasares, o algoritmo exige o ajuste de paridade de $\pi$ radianos ($180^\circ$) no referencial de fase, conforme detalhado no **Volume IV e V** da tese (correção de spin-2).
+O pico de **51.73σ** detectado no SDSS refere-se à coerência vetorial dos resíduos anisotrópicos em relação ao modelo $\Lambda$CDM. O algoritmo inclui testes de **Injeção Cega (Blind Injection)** para descartar artefatos numéricos.
 
 ---
 
 ## Work Description
 
-This repository hosts the computational infrastructure and statistical audit algorithms used to validate the **Referential Relativity Theory (RRT)**. RRT proposes a fundamental unification between open quantum system dynamics, general relativity, and deep cosmology, replacing hypothetical entities (such as dark matter and dark energy) with an active spin-2 temporal field and a universal anisotropy gradient.
+This repository hosts the computational infrastructure and statistical audit algorithms used to validate the **Referential Relativity Theory (RRT)**. RRT proposes a hydrodynamic reformulation of spacetime based on **Thermodynamic Phase Transitions**. The theory replaces hypothetical entities (Dark Matter and Dark Energy) with a viscous temporal field ($\mathcal{T}_{\mu\nu}$) whose interaction with matter is governed by local energy density ($\rho$).
 
-The thesis is structured across **five volumes**, culminating in **Volume V: The Treaty of Universal Synthesis**, where observational evidence (SDSS, CERN, SPARC) is unified with the formal and definitive proof of the **6 Millennium Prize Problems** from the Clay Mathematics Institute. The provided scripts allow for the exact replication of the convergence between field physics and arithmetical harmony.
+The thesis is structured across **four volumes**, establishing that the universe operates in distinct regimes of causal viscosity:
+1.  **Phase 1 (Saturated):** High-density regime (Solar System, CERN) where RRT is shielded, recovering General Relativity and the Standard Model.
+2.  **Phase 2 (Transition):** Critical density regime (Galactic Halos) where viscosity generates flat rotation curves (SPARC).
+3.  **Phase 3 (Viscous):** Deep vacuum regime (Cosmic Voids) where temporal flow drives accelerated expansion.
 
 ### 📂 Module Organization
 
-1. **Millennium Prize Solutions (`/millennium_solutions`):** Scripts focused on the mathematical proof of all 6 challenges: Yang-Mills, the Riemann Hypothesis, P vs NP, Navier-Stokes, the Hodge Conjecture, and the BSD Conjecture, utilizing **Landauer's Entropy** and RRT's vacuum viscosity.
-2. **Core Cosmological Audits (`/cosmology_core`):** Processing algorithms for large catalogs (SDSS, Pantheon+, SPARC) to extract statistical significance (Sigma) and validate the Cortez Metric.
-3. **Experimental & Robustness (`/experimental_validation`):** Baryonic shielding tests (BNP) in satellites (LAGEOS-2), quantum hardware interference (Micius), and directional stability analysis via Jackknife.
+1.  **Cosmology Core (`/cosmology_core`):** Processing algorithms for large catalogs (SDSS DR16Q, Pantheon+, Planck) to extract statistical significance and validate the Cortez Rotation ($\omega_p$).
+2.  **Phase Transition Dynamics (`/phase_transition`):** Simulations of the shielding function $K(\rho)$ and modeling of galactic rotation curves without dark matter.
+3.  **Null Tests & Shielding (`/null_tests`):** Robustness tests in high-density environments (LAGEOS-2, CMS/CERN) to confirm **local isotropy** and the validity of Phase 1 (Saturation).
 
 ### 🛠️ Technical Requirements
 To run the scripts, use a **Python 3.11+** environment. Required libraries include:
@@ -49,28 +55,24 @@ To run the scripts, use a **Python 3.11+** environment. Required libraries inclu
 * `healpy` (CMB multipole analysis)
 
 ### ⚠️ Execution Notes
-To replicate the **51.73σ** significance peak in Quasars, the algorithm requires a $\pi$ radians ($180^\circ$) parity adjustment in the phase reference frame, as detailed in **Volume IV and V** of the thesis (spin-2 correction).
+The **51.73σ** peak detected in SDSS refers to the vector coherence of anisotropic residuals relative to the $\Lambda$CDM model. The algorithm includes **Blind Injection** tests to rule out numerical artifacts.
 
 ---
 
-## 📋 Tabela de Scripts / Scripts Directory
+## 📋 Tabela de Scripts e Evidências / Scripts & Evidence Table
 
-| Novo Nome / New Name | Problema ou Alvo / Problem or Target | Significância / Significance |
-| :--- | :--- | :--- |
-| `trr_riemann_zeta_resonance.py` | Riemann Hypothesis | **99.98% Match** |
-| `trr_cern_yang_mills_mass_gap.py` | Yang-Mills (Mass Gap) | **7.18σ** |
-| `trr_p_vs_np_computational_torque.py` | P vs NP (Thermodynamics) | **Landauer Barrier** |
-| `trr_navier_stokes_finiteness_proof.py` | Navier-Stokes | **Smoothness / Suavidade** |
-| `trr_hodge_cycle_quantization.py` | Hodge Conjecture | **Topological Stability** |
-| `trr_bsd_conjecture_rank_parity.py` | BSD Conjecture | **Rank Parity / EAS** |
-| `trr_sdss_dr16q_51sigma_audit.py` | SDSS DR16Q (Quasars) | **51.73σ** |
-| `trr_pantheon_plus_gradient_test.py` | Pantheon+ (SNe Ia) | **25.47σ** |
-| `trr_sparc_galactic_rotation_dynamics.py` | SPARC (Galaxies) | **5.81 km/s (Residual)** |
-| `trr_lageos_pnb_blindness_test.py` | LAGEOS-2 (BNP) | **0.22σ (Shielding Confirmed)** |
-| `trr_micius_hardware_filter_audit.py` | Micius (Quantum Phase) | **Hardware Signature** |
-| `trr_jackknife_stability_analysis.py` | Stability / Estabilidade | **0.19° Deviation** |
+| Script Name | Alvo / Target | Fase (Regime) / Phase | Resultado / Result |
+| :--- | :--- | :--- | :--- |
+| `trr_sdss_dr16q_51sigma_audit.py` | SDSS DR16Q (Quasars) | **Fase 3 (Viscosa)** | **51.73σ (Anisotropy)** |
+| `trr_pantheon_plus_gradient.py` | Pantheon+ (SNe Ia) | **Fase 2/3 (Mista)** | **25.47σ (Gradient)** |
+| `trr_planck_cmb_alignment.py` | Planck (CMB) | **Fase 3 (Primordial)** | **98.36% Alignment** |
+| `trr_sparc_rotation_curves.py` | SPARC (Galaxies) | **Fase 2 (Transition)** | **5.81 km/s (Residual)** |
+| `trr_cern_cms_isotropy_test.py` | CERN/CMS (Muons) | **Fase 1 (Saturated)** | **Isotrópico / Null** |
+| `trr_lageos_pnb_shielding.py` | LAGEOS-2 (Gravity) | **Fase 1 (Saturated)** | **0.22σ (Shielded)** |
+| `trr_micius_quantum_phase.py` | Micius (Quantum) | **Fase 1 (Saturated)** | **Null / Hardware Limit** |
+| `trr_jackknife_stability.py` | Stability Analysis | **Global** | **0.19° Deviation** |
 
 ---
-**Autor / Author:** Jean Coutinho Cortez  
-**Local / Location:** Rio de Janeiro, Brasil 🇧🇷  
+**Autor / Author:** Jean Coutinho Cortez
+**Local / Location:** Rio de Janeiro, Brasil 🇧🇷
 **Data / Date:** Janeiro / January 2026
