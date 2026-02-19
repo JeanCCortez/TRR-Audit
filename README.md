@@ -3,10 +3,13 @@
 
 ---
 
-## 🚀 Motor Cosmológico TRR (Interactive Audit)
-Para facilitar a auditoria imediata sem necessidade de ambiente Python local, disponibilizamos o **Motor TRR** (Streamlit App).
-* **Acesso:** [https://trr-motor.streamlit.app/](https://trr-motor.streamlit.app/)
-* **Função:** Validação de curvas de rotação galáctica e lentes gravitacionais com emissão de relatórios técnicos de auditoria que quantificam a falha do modelo ΛCDM.
+## 🚀 Motor Cosmológico TRR / RRT Cosmological Engine (Interactive Audit)
+Para facilitar a auditoria imediata sem necessidade de ambiente Python local, disponibilizamos o Motor TRR (Streamlit App).
+To facilitate immediate auditing without the need for a local Python environment, we provide the RRT Engine (Streamlit App).
+
+Acesso / Access: https://trr-motor.streamlit.app/
+
+Função / Function: Validação de curvas de rotação galáctica e lentes gravitacionais com emissão de relatórios técnicos de auditoria que quantificam a falha do modelo ΛCDM. / Validation of galactic rotation curves and gravitational lensing, generating technical audit reports that quantify the failure of the ΛCDM model.
 
 ---
 
